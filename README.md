@@ -1,14 +1,6 @@
-# FragFake
+# FragFake: A Dataset for Fine-Grained Detection of Edited Images with Vision Language Models
 
-A dataset and framework for fine-grained detection of edited images using Vision Language Models (VLMs).
-
-## Overview
-
-FragFake is the first dedicated benchmark dataset for edited image detection, focused on addressing key challenges in image manipulation detection:
-
-1. Moving beyond binary classification to precise localization of edits
-2. Avoiding costly pixel-level annotations required by traditional computer vision methods
-3. Providing a large-scale, high-quality dataset for modern image-editing detection techniques
+This a official repository for FragFake: A Dataset for Fine-Grained Detection of Edited Images with Vision Language Models
 
 ## Repository Structure
 
