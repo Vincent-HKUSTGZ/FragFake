@@ -80,6 +80,12 @@ python generate_instructions.py \
 --skip-second-pass: (optional) if set, only the first pass runs, which is Easy version (no deduplication)
 ```
 
+## Image Editing
+1. GoT: https://github.com/rongyaofang/GoT
+2. Magic Brush: https://github.com/OSU-NLP-Group/MagicBrush
+3. UltraEdit: https://github.com/HaozheZhao/UltraEdit
+4. Gemini-IG: You can access the API in https://ai.google.dev/gemini-api/docs/models
+
 ## Model Fine-tuning
 
 All model fine-tuning in this repository is performed using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), a comprehensive framework for fine-tuning large language models. Please refer to the LLaMA-Factory documentation for detailed instructions on setting up and running the fine-tuning process.
