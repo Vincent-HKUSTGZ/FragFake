@@ -11,7 +11,7 @@ This repository contains several key Python scripts for working with the FragFak
 - **test_result_llava_1_5.py**: Evaluation script for LLaVA models
 - **test_result_qwen2.py**: Evaluation script for Qwen2 models
 - **test_result_qwen2_5.py**: Evaluation script for Qwen2.5 models
-
+- **create_instruction_easy_and_hard.py**: Instructions creation
 ## Usage
 
 ### Data Processing
@@ -54,6 +54,30 @@ python test_result_qwen2.py
 
 ```bash
 python test_result_qwen2_5.py
+```
+
+#### Creating Instruction
+```bash
+python generate_instructions.py \
+  --api-key YOUR_GPT4O_API_KEY \
+  --base-dir /fdata/FragFake/coco_train_sample_3_25 \
+  --output-json /fdata/FragFake/finished_file/easy_instructions.json \
+  --modification-goals "object addition" "object replacement" \
+  --temperature 1.0
+
+--api-key (required): your GPT-4o API key
+
+--api-url: (optional) the API endpoint; defaults to the HKUST-GZ URL
+
+--base-dir (required): path to COCO image root directory (organized by category)
+
+--output-json (required): path where the result JSON will be saved
+
+--modification-goals: (optional) space-separated list of goals; defaults to object addition object replacement
+
+--temperature: (optional) sampling temperature (0.0–2.0), default 1.0
+
+--skip-second-pass: (optional) if set, only the first pass runs, which is Easy version (no deduplication)
 ```
 
 ## Model Fine-tuning
