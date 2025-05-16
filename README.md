@@ -59,15 +59,3 @@ python test_result_qwen2_5.py
 ## Model Fine-tuning
 
 All model fine-tuning in this repository is performed using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), a comprehensive framework for fine-tuning large language models. Please refer to the LLaMA-Factory documentation for detailed instructions on setting up and running the fine-tuning process.
-
-### Fine-tuning Process
-
-1. Prepare the training dataset in the conversation format using `clean_instruction_create_format.py`
-2. Use LLaMA-Factory to fine-tune the model of your choice
-3. Evaluate the fine-tuned model using the appropriate test script
-
-## Evaluation Metrics
-
-The evaluation scripts measure:
-1. **Classification Accuracy**: Ability to identify whether an image has been modified
-2. **Object Localization**: Precision in identifying which objects were modified
